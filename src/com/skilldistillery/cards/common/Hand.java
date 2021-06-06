@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class Hand {
 
-	private List<Card> cards;
+	protected List<Card> cards;
 	
 	public Hand() {
 		this.cards = new ArrayList<>();
@@ -21,6 +21,8 @@ public abstract class Hand {
 				System.out.println(card);
 			}
 		}
+				System.out.println("Hand value: " + getHandValue());
+				System.out.println();
 		
 	}
 
@@ -41,7 +43,7 @@ public abstract class Hand {
 		return handValue;
 	}
 	
-	public void foldHand() {
+	public void clearHand() {
 		cards.clear();
 	}
 
