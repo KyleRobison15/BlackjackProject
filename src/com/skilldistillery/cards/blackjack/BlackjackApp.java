@@ -92,7 +92,7 @@ public class BlackjackApp {
 			} else if (player.didPush(dealer.playerHand)) {
 				System.out.println("Push. No winner.");
 			} else if (player.didWin(dealer.playerHand)) {
-				System.out.println("You win!");
+				System.out.println("You beat the dealer's hand. You win!");
 			} else {
 				System.out.println("Dealer wins.");
 			}
